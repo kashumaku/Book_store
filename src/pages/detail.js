@@ -10,7 +10,7 @@ import { FaAngleDown } from "react-icons/fa";
 
 const Detail = () => {
   const params = useParams();
-  const [episode, setEpisode] = useState(2);
+  const [episode, setEpisode] = useState(1);
   const [showAdd, setShowAdd] = useState(false);
   const [showEpisodeList, setShowEpisodeList] = useState(false);
   const bookId = Number(params.id);
@@ -26,7 +26,7 @@ const Detail = () => {
 
       <div className="bg-black text-white ">
         {/* detail sidebar */}
-        <div className="bg-[#50f] h-16 md:w-[70%] m-auto text-2xl flex items-center justify-around">
+        <div className="bg-[#50f] h-16 lg:w-[70%] m-auto text-2xl flex items-center justify-around">
           <h1 className="">{book.title}</h1>
           <div className="relative">
             <span
@@ -58,7 +58,7 @@ const Detail = () => {
         </div>
         <div className="bg-black text-white h-screen overflow-y-scroll">
           {episode && (
-            <p className="md:w-[70%] min-h-full p-4 pb-8  m-auto text-xl tracking-wider ">
+            <p className="lg:w-[70%] min-h-full p-4 pb-8  m-auto text-xl tracking-wider ">
               {book.story.filter((ep) => ep.ep === episode)[0].content}
               {book.story.length > episode && (
                 <img

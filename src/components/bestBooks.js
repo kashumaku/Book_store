@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { books } from "../assets/db/bookdata";
 const BestBooks = () => {
   return (
-    <div className="flex  justify-between  my-20 md:w-[60%] m-auto">
+    <div className="flex  justify-between  my-20 lg:w-[60%] p-4 m-auto">
       {books.map((book) => (
         <div key={book.id} className=" bg-black  rounded-xl overflow-hidden">
           <img src={book.thumbnail} alt="" className="w-[180px] h-[150px]" />

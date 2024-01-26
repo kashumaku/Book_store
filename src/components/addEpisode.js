@@ -6,21 +6,20 @@ const AddEpisode = ({ cancelAdd }) => {
         top: 0,
         height: "100vh",
         width: "100vw",
-        backgroundColor: "rgba(0,0,0, 0.7)",
+        backgroundColor: "rgba(0,0,0, 0.8)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
       <div
+        className="p-[20px] w-screen max-md:h-screen  lg:w-[50%]"
         style={{
-          padding: "20px",
           borderRadius: "30px",
           display: "flex",
           gap: "10px",
           flexDirection: "column",
           backgroundColor: "gray",
-          width: "50%",
         }}
       >
         <label htmlFor="">Title</label>
